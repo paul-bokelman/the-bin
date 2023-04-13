@@ -1,0 +1,23 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "module": "ES2020",
+    "target": "ES2020",
+    "baseUrl": "./src",
+    "skipLibCheck": true,
+    "lib": ["ES2022"], //
+    "paths": {
+      "@/types": ["types"],
+      "@/types/*": ["types/*"]
+    }
+  },
+  "ts-node": {
+    "compilerOptions": {
+      "module": "ES2020"
+    },
+    "files": true
+  },
+  "exclude": ["node_modules"]
+}
